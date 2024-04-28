@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    font-family: "Roboto";
+    color: #393e46;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "nav nav"
+      "asidebar main"
+      "footer footer";
+    grid-template-columns: 10em 8fr;
+    grid-template-rows: 4em 8fr 4em;
+  }
+
+  nav {
+    grid-area: nav;
+    line-height: 4rem;
+    background-color: #24527a;
+    color: white;
+    text-align: center;
+  }
+  
+  asidebar {
+    grid-area: asidebar;
+    background-color: #e7e7e7;
+    min-height: calc(100vh - 10rem);
+    padding: 0 1.5rem;
+  }
+
+
+  asidebar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    line-height: 1.5rem;
+  }
+
+  asidebar ul li {
+    list-style: none;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+  asidebar li:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+  }
+
+  main {
+    grid-area: main;
+    background-color: #e7e7e7;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  .stock {
+    color: #999;
+  }
+
+  .card {
+    display: flex;
+    background-color: white;
+    min-height: 100px;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .card .btn{
+    background-color: #24527a;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+
+  .btn:hover {
+    background-color: #2980b9;
+  }
+
+  .card img{
+    margin: 0.5rem;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+  h5{ 
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;
+  }
+  footer{
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    line-height: 4em;
+  }
